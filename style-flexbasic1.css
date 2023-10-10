@@ -38,19 +38,50 @@ order: 3;
 
 /* Lat-2 Kolom */
 .container-dua {
-    width: 800px;
+    max-width: 800px;
     margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
+    
 }
 
 .layanan {
-    width: 30%;
     padding: 20px;
     box-sizing:border-box;
-
+    margin-bottom: 20px;
 }
 
 .layanan.satu { background-color: rgb(119, 119, 255);}
 .layanan.dua { background-color: rgb(103, 216, 103);}
 .layanan.tiga { background-color: rgb(255, 124, 124);}
+
+.container-tiga {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 100%;
+
+}
+
+/* Responsive */
+@media(min-width: 600px) {
+    .container-dua {
+        display: flex;
+    justify-content: space-between;
+    }
+
+    .layanan {
+    width: 30%;
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+}
